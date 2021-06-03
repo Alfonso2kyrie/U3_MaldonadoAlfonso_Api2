@@ -1,0 +1,176 @@
+
+mar. 02, 2021 22:04:23.305 NEW SESSION
+mar. 02, 2021 22:04:23.305 [15060:10044:0302/220423.303:ERROR:device_event_log_impl.cc(211)] [22:04:23.303] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 02, 2021 22:04:23.309 [15060:10044:0302/220423.304:ERROR:device_event_log_impl.cc(211)] [22:04:23.304] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 02, 2021 22:04:23.318 [15060:10044:0302/220423.318:ERROR:device_event_log_impl.cc(211)] [22:04:23.318] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 02, 2021 22:04:23.322 [15060:10044:0302/220423.318:ERROR:device_event_log_impl.cc(211)] [22:04:23.318] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+mar. 10, 2021 21:19:43.682 NEW SESSION
+mar. 10, 2021 21:19:43.682 [13052:9440:0310/211943.680:ERROR:device_event_log_impl.cc(214)] [21:19:43.680] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 10, 2021 21:19:43.688 [13052:9440:0310/211943.687:ERROR:device_event_log_impl.cc(214)] [21:19:43.687] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+mar. 18, 2021 16:22:07.449 NEW SESSION
+mar. 18, 2021 16:22:07.449 [5168:1320:0318/162207.448:ERROR:device_event_log_impl.cc(214)] [16:22:07.448] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 18, 2021 16:22:07.454 [5168:1320:0318/162207.454:ERROR:device_event_log_impl.cc(214)] [16:22:07.455] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 18, 2021 18:02:47.241 [5168:1320:0318/180247.240:ERROR:device_event_log_impl.cc(214)] [18:02:47.240] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+mar. 18, 2021 18:08:16.393 [11224:7520:0318/180816.393:ERROR:device_event_log_impl.cc(214)] [18:08:16.393] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 18, 2021 18:08:16.399 [11224:7520:0318/180816.399:ERROR:device_event_log_impl.cc(214)] [18:08:16.399] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+mar. 22, 2021 09:06:38.388 NEW SESSION
+mar. 22, 2021 09:06:38.388 [9736:8864:0322/090638.387:ERROR:device_event_log_impl.cc(214)] [09:06:38.387] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 22, 2021 09:06:38.393 [9736:8864:0322/090638.392:ERROR:device_event_log_impl.cc(214)] [09:06:38.392] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 22, 2021 09:08:23.862 [11704:10052:0322/090823.862:ERROR:device_event_log_impl.cc(214)] [09:08:23.862] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 22, 2021 09:08:23.869 [11704:10052:0322/090823.869:ERROR:device_event_log_impl.cc(214)] [09:08:23.869] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+mar. 23, 2021 21:47:22.43 NEW SESSION
+mar. 23, 2021 21:47:22.43 [14384:2076:0323/214722.042:ERROR:device_event_log_impl.cc(214)] [21:47:22.042] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 23, 2021 21:47:22.48 [14384:2076:0323/214722.047:ERROR:device_event_log_impl.cc(214)] [21:47:22.047] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 23, 2021 21:48:53.869 [12836:9288:0323/214853.869:ERROR:device_event_log_impl.cc(214)] [21:48:53.869] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 23, 2021 21:48:53.876 [12836:9288:0323/214853.876:ERROR:device_event_log_impl.cc(214)] [21:48:53.876] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 23, 2021 22:44:56.296 [10660:7796:0323/224456.296:ERROR:device_event_log_impl.cc(214)] [22:44:56.296] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 23, 2021 22:44:56.303 [10660:7796:0323/224456.303:ERROR:device_event_log_impl.cc(214)] [22:44:56.303] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+mar. 29, 2021 17:27:08.256 NEW SESSION
+mar. 29, 2021 17:27:08.256 [3032:4840:0329/172708.255:ERROR:device_event_log_impl.cc(214)] [17:27:08.255] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 29, 2021 17:27:08.261 [3032:4840:0329/172708.261:ERROR:device_event_log_impl.cc(214)] [17:27:08.261] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+mar. 29, 2021 20:57:05.780 NEW SESSION
+mar. 29, 2021 20:57:05.780 [11504:12792:0329/205705.779:ERROR:device_event_log_impl.cc(214)] [20:57:05.779] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 29, 2021 20:57:05.787 [11504:12792:0329/205705.783:ERROR:device_event_log_impl.cc(214)] [20:57:05.783] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+mar. 29, 2021 21:54:51.432 [9728:14828:0329/215451.431:ERROR:device_event_log_impl.cc(214)] [21:54:51.432] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+mar. 29, 2021 21:54:51.438 [9728:14828:0329/215451.438:ERROR:device_event_log_impl.cc(214)] [21:54:51.438] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 01, 2021 14:26:11.86 NEW SESSION
+abr. 01, 2021 14:26:11.86 [13728:15480:0401/142611.085:ERROR:device_event_log_impl.cc(214)] [14:26:11.085] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 01, 2021 14:26:11.93 [13728:15480:0401/142611.089:ERROR:device_event_log_impl.cc(214)] [14:26:11.089] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 09, 2021 12:29:29.412 NEW SESSION
+abr. 09, 2021 12:29:29.412 [4416:17396:0409/122929.411:ERROR:device_event_log_impl.cc(214)] [12:29:29.411] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 09, 2021 12:29:29.417 [4416:17396:0409/122929.416:ERROR:device_event_log_impl.cc(214)] [12:29:29.417] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 11, 2021 22:29:10.727 NEW SESSION
+abr. 11, 2021 22:29:10.727 [6508:7692:0411/222910.726:ERROR:device_event_log_impl.cc(214)] [22:29:10.726] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 11, 2021 22:29:10.731 [6508:7692:0411/222910.731:ERROR:device_event_log_impl.cc(214)] [22:29:10.731] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 12, 2021 13:43:56.396 NEW SESSION
+abr. 12, 2021 13:43:56.396 [3320:5764:0412/134356.395:ERROR:device_event_log_impl.cc(214)] [13:43:56.395] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 12, 2021 13:43:56.402 [3320:5764:0412/134356.402:ERROR:device_event_log_impl.cc(214)] [13:43:56.401] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 12, 2021 14:56:40.797 [3320:15640:0412/145640.797:ERROR:mcs_client.cc(755)] Received close command, resetting connection.
+
+abr. 12, 2021 18:48:02.566 NEW SESSION
+abr. 12, 2021 18:48:02.566 [1956:2160:0412/184802.565:ERROR:device_event_log_impl.cc(214)] [18:48:02.565] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 12, 2021 18:48:02.569 [1956:2160:0412/184802.569:ERROR:device_event_log_impl.cc(214)] [18:48:02.569] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 12, 2021 19:32:05.344 [1956:2160:0412/193205.344:ERROR:device_event_log_impl.cc(214)] [19:32:05.344] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+
+abr. 13, 2021 13:49:34.488 NEW SESSION
+abr. 13, 2021 13:49:34.488 [13780:3652:0413/134934.487:ERROR:device_event_log_impl.cc(214)] [13:49:34.487] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 13, 2021 13:49:34.493 [13780:3652:0413/134934.493:ERROR:device_event_log_impl.cc(214)] [13:49:34.493] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 13, 2021 22:36:23.439 NEW SESSION
+abr. 13, 2021 22:36:23.440 [13728:10700:0413/223623.438:ERROR:device_event_log_impl.cc(214)] [22:36:23.438] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 13, 2021 22:36:23.442 [13728:10700:0413/223623.442:ERROR:device_event_log_impl.cc(214)] [22:36:23.441] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 13, 2021 22:36:23.446 [13728:10700:0413/223623.446:ERROR:device_event_log_impl.cc(214)] [22:36:23.446] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 14, 2021 11:24:18.860 NEW SESSION
+abr. 14, 2021 11:24:18.860 [5344:16600:0414/112418.859:ERROR:device_event_log_impl.cc(214)] [11:24:18.859] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 14, 2021 11:24:18.864 [5344:16600:0414/112418.864:ERROR:device_event_log_impl.cc(214)] [11:24:18.864] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 14, 2021 11:35:12.308 NEW SESSION
+abr. 14, 2021 11:35:12.309 [7360:12332:0414/113512.308:ERROR:device_event_log_impl.cc(214)] [11:35:12.308] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 14, 2021 11:35:12.314 [7360:12332:0414/113512.314:ERROR:device_event_log_impl.cc(214)] [11:35:12.314] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 14, 2021 16:32:10.16 NEW SESSION
+abr. 14, 2021 16:32:10.16 [2536:11860:0414/163210.015:ERROR:device_event_log_impl.cc(214)] [16:32:10.015] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 14, 2021 16:32:10.22 [2536:11860:0414/163210.022:ERROR:device_event_log_impl.cc(214)] [16:32:10.021] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 14, 2021 18:42:04.42 [2536:11860:0414/184204.041:ERROR:device_event_log_impl.cc(214)] [18:42:04.041] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+
+abr. 15, 2021 10:17:14.162 NEW SESSION
+abr. 15, 2021 10:17:14.162 [14732:12352:0415/101714.161:ERROR:device_event_log_impl.cc(214)] [10:17:14.161] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 15, 2021 10:17:14.166 [14732:12352:0415/101714.166:ERROR:device_event_log_impl.cc(214)] [10:17:14.165] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 15, 2021 10:18:10.621 [14732:12352:0415/101810.620:ERROR:device_event_log_impl.cc(214)] [10:18:10.620] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 15, 2021 12:45:52.237 [11608:12224:0415/124552.236:ERROR:device_event_log_impl.cc(214)] [12:45:52.237] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 15, 2021 12:45:52.243 [11608:12224:0415/124552.243:ERROR:device_event_log_impl.cc(214)] [12:45:52.243] USB: usb_device_handle_win.cc:1056 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 16, 2021 11:04:02.472 NEW SESSION
+abr. 16, 2021 11:04:02.472 [3820:15016:0416/110402.471:ERROR:device_event_log_impl.cc(214)] [11:04:02.471] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 16, 2021 11:04:02.474 [3820:15016:0416/110402.474:ERROR:device_event_log_impl.cc(214)] [11:04:02.475] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 16, 2021 12:21:39.928 [3820:10672:0416/122139.927:ERROR:mcs_client.cc(755)] Received close command, resetting connection.
+abr. 16, 2021 17:27:48.370 [6960:11404:0416/172748.370:ERROR:device_event_log_impl.cc(214)] [17:27:48.371] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 16, 2021 17:27:48.374 [6960:11404:0416/172748.373:ERROR:device_event_log_impl.cc(214)] [17:27:48.374] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 18, 2021 19:09:17.169 NEW SESSION
+abr. 18, 2021 19:09:17.169 [12492:6540:0418/190917.168:ERROR:device_event_log_impl.cc(214)] [19:09:17.168] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 18, 2021 19:09:17.173 [12492:6540:0418/190917.173:ERROR:device_event_log_impl.cc(214)] [19:09:17.173] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 18, 2021 19:09:17.186 [12492:8372:0418/190917.186:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:09:43.468 [12492:8372:0418/190943.468:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:09:44.177 [12492:6540:0418/190944.177:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-105).
+abr. 18, 2021 19:09:45.276 [12492:6540:0418/190945.276:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-105).
+abr. 18, 2021 19:10:25.380 [12492:8372:0418/191025.380:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:12:23.884 [12492:8372:0418/191223.884:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:16:16.605 [12492:8372:0418/191616.605:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:20:11.917 [12492:8372:0418/192011.916:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:20:27.803 [12492:6540:0418/192027.802:ERROR:device_event_log_impl.cc(214)] [19:20:27.802] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 18, 2021 19:20:35.911 [12492:8372:0418/192035.911:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:20:39.418 [12492:8372:0418/192039.418:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 18, 2021 19:21:19.775 [12492:6540:0418/192119.775:ERROR:device_event_log_impl.cc(214)] [19:21:19.775] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)
+abr. 18, 2021 19:21:20.88 [12492:6540:0418/192120.088:ERROR:device_event_log_impl.cc(214)] [19:21:20.088] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 18, 2021 19:21:20.103 [12492:6540:0418/192120.103:ERROR:device_event_log_impl.cc(214)] [19:21:20.102] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 18, 2021 19:21:20.106 [12492:6540:0418/192120.106:ERROR:device_event_log_impl.cc(214)] [19:21:20.106] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)
+abr. 18, 2021 23:16:44.417 [12492:6540:0418/231644.417:ERROR:device_event_log_impl.cc(214)] [23:16:44.417] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+
+abr. 19, 2021 20:34:08.867 NEW SESSION
+abr. 19, 2021 20:34:08.867 [10928:16672:0419/203408.866:ERROR:device_event_log_impl.cc(214)] [20:34:08.866] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 19, 2021 20:34:08.870 [10928:16672:0419/203408.870:ERROR:device_event_log_impl.cc(214)] [20:34:08.870] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 19, 2021 22:47:16.241 [10928:11676:0419/224716.240:ERROR:cast_crl.cc(384)] CRL - Verification failed.
+abr. 20, 2021 02:31:02.972 [10928:16672:0420/023102.972:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:03.973 [10928:16672:0420/023103.973:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:05.97 [10928:16672:0420/023105.097:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:06.203 [10928:16672:0420/023106.203:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:07.221 [10928:16672:0420/023107.221:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:13.863 [10928:16672:0420/023113.863:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:16.123 [10928:16672:0420/023116.123:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:17.893 [10928:16672:0420/023117.893:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:31:30.645 [10928:16672:0420/023130.645:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:32:09.817 [10928:16672:0420/023209.817:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:32:12.703 [10928:16672:0420/023212.703:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:36:05.889 [10928:16672:0420/023605.889:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:41:05.889 [10928:16672:0420/024105.889:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:46:05.878 [10928:16672:0420/024605.878:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:51:05.881 [10928:16672:0420/025105.881:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 02:56:05.880 [10928:16672:0420/025605.880:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 03:01:05.961 [10928:16672:0420/030105.961:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 03:06:05.851 [10928:16672:0420/030605.851:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 03:11:05.881 [10928:16672:0420/031105.881:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 1.601 s for first_image_paint 1.584 s
+abr. 20, 2021 16:52:02.310 [10928:16672:0420/165202.310:ERROR:device_event_log_impl.cc(214)] [16:52:02.310] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 20, 2021 16:52:02.317 [10928:16672:0420/165202.317:ERROR:device_event_log_impl.cc(214)] [16:52:02.317] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)
+abr. 20, 2021 17:39:07.582 [10928:16672:0420/173907.581:ERROR:device_event_log_impl.cc(214)] [17:39:07.582] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 20, 2021 17:39:07.591 [10928:16672:0420/173907.591:ERROR:device_event_log_impl.cc(214)] [17:39:07.591] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)
+
+abr. 20, 2021 19:18:24.357 NEW SESSION
+abr. 20, 2021 19:18:24.357 [3408:14620:0420/191824.356:ERROR:device_event_log_impl.cc(214)] [19:18:24.356] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 20, 2021 19:18:24.361 [3408:14620:0420/191824.361:ERROR:device_event_log_impl.cc(214)] [19:18:24.360] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 20, 2021 19:36:11.145 [3408:17280:0420/193611.145:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 20, 2021 19:38:41.733 [3408:17280:0420/193841.733:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 20, 2021 19:39:11.322 [3408:17280:0420/193911.322:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+abr. 20, 2021 20:40:14.326 [3408:14620:0420/204014.326:ERROR:device_event_log_impl.cc(214)] [20:40:14.326] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 20, 2021 20:47:05.897 [3408:14620:0420/204705.897:ERROR:device_event_log_impl.cc(214)] [20:47:05.896] USB: usb_service_win.cc:258 Failed to get device driver name: No se ha encontrado el elemento. (0x490)
+abr. 20, 2021 20:47:05.901 [3408:14620:0420/204705.901:ERROR:device_event_log_impl.cc(214)] [20:47:05.901] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)
+abr. 21, 2021 02:04:24.590 [3408:14620:0421/020424.590:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to Debugger.setBlackboxPatterns", source: devtools://devtools/bundled/sdk/sdk.js (1)
+abr. 21, 2021 10:50:00.880 [3408:14620:0421/105000.880:ERROR:device_event_log_impl.cc(214)] [10:50:00.880] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+abr. 21, 2021 11:13:14.933 NEW SESSION
+abr. 21, 2021 11:13:14.933 [13676:11612:0421/111314.932:ERROR:backend_impl.cc(1041)] Critical error found -8
+abr. 21, 2021 11:13:25.450 [13676:15116:0421/111325.450:ERROR:device_event_log_impl.cc(214)] [11:13:25.450] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 21, 2021 11:13:25.455 [13676:15116:0421/111325.455:ERROR:device_event_log_impl.cc(214)] [11:13:25.454] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 21, 2021 15:08:52.204 [13676:15116:0421/150852.203:ERROR:device_event_log_impl.cc(214)] [15:08:52.203] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 21, 2021 15:49:20.859 [8180:10588:0421/154920.859:ERROR:device_event_log_impl.cc(214)] [15:49:20.858] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+abr. 21, 2021 15:49:20.862 [8180:10588:0421/154920.862:ERROR:device_event_log_impl.cc(214)] [15:49:20.862] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 21, 2021 15:49:20.863 [8180:10588:0421/154920.862:ERROR:device_event_log_impl.cc(214)] [15:49:20.862] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+abr. 22, 2021 14:19:36.270 NEW SESSION
+abr. 22, 2021 14:19:36.270 [2184:8012:0422/141936.268:ERROR:device_event_log_impl.cc(214)] [14:19:36.268] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 22, 2021 14:19:36.271 [2184:8012:0422/141936.271:ERROR:device_event_log_impl.cc(214)] [14:19:36.271] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+abr. 23, 2021 15:18:58.862 NEW SESSION
+abr. 23, 2021 15:18:58.862 [4244:1052:0423/151858.861:ERROR:device_event_log_impl.cc(214)] [15:18:58.861] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+abr. 23, 2021 15:18:58.864 [4244:1052:0423/151858.864:ERROR:device_event_log_impl.cc(214)] [15:18:58.864] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.

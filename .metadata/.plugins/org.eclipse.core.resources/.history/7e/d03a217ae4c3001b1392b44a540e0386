@@ -1,0 +1,7 @@
+package com.utez.mx.Entity;
+
+public class Direccion {
+	int idDireccion;
+	String entidadFederativa;
+	
+}

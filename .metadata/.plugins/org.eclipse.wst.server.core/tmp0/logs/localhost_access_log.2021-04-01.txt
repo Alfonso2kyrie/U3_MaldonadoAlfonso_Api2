@@ -1,0 +1,10 @@
+127.0.0.1 - - [01/Apr/2021:14:26:08 -0600] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:26:11 -0600] "GET /eventosComunitarios/ HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:26:11 -0600] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:26:20 -0600] "GET /eventosComunitarios/oferta/all HTTP/1.1" 200 3227
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:30:35 -0600] "GET /eventosComunitarios/oferta/all HTTP/1.1" 200 3298
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:31:20 -0600] "POST /eventosComunitarios/oferta/save HTTP/1.1" 400 637
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:44:05 -0600] "POST /eventosComunitarios/oferta/save HTTP/1.1" 400 637
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:44:14 -0600] "POST /eventosComunitarios/oferta/save HTTP/1.1" 400 637
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:44:26 -0600] "POST /eventosComunitarios/oferta/save HTTP/1.1" 400 637
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:14:44:45 -0600] "POST /eventosComunitarios/oferta/save HTTP/1.1" 400 637

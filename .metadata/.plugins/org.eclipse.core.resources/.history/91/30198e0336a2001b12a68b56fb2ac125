@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+
+<script src="https://kit.fontawesome.com/938364cfa6.js"
+	crossorigin="anonymous"></script>
+
+<title>Inscripciones</title>
+
+</head>
+
+<body>
+
+	<div class="contenedor divImagen">
+		<header>
+
+			<div class="contenedorImagen">
+				<div class="card-body">
+					<img class="imagenRedonda" alt="Morelos Logo"
+						src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa23828ee69d63a71/backgroundarea/i1377858141ec29e2/version/1539622028/image.png">
+				</div>
+			</div>
+
+			<h1>
+				<strong> EVENTOS </strong> - EVENTOS COMUNITARIOS
+			</h1>
+			<a sec:authorize="hasRole('ROLE_USER')" href=""
+				class="btn btn-primary" th:href="@{/logout}">Cerrar Sesion</a>
+
+			<form action="" th:action="@{/}" method="GET">
+				<button type="submit" class="btn btn-primary">Regresar</button>
+			</form>
+
+
+		</header>
+
+		<main>
+			<div class="divBuscador">
+				<form class="d-flex" method="POST" th:action="@{/search/ofertas}">
+					<input name="searchword" class="form-control me-2 buscador"
+						type="search" placeholder="Busca un evento" aria-label="Search">
+					<button class="btn btn-outline-primary" type="submit">Buscar</button>
+				</form>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 table-responsive">
+
+					<form sec:authorize="hasRole('ROLE_USER')" action=""
+						th:action="@{/inscripcionPersona/all}" method="GET">
+						<button type="submit" class="btn btn-primary">
+							<i class="fas fa-user-circle"></i> Mi Perfil
+						</button>
+					</form>
+
+
+					<div class="col-lg-12 contenedorCards">
+
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="home-tab"
+									data-bs-toggle="tab" data-bs-target="#home" type="button"
+									role="tab" aria-controls="home" aria-selected="true">Individual</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+									data-bs-target="#profile" type="button" role="tab"
+									aria-controls="profile" aria-selected="false">Equipo</button>
+							</li>
+
+						</ul>
+						<div class="tab-content" id="myTabContent">
+
+
+							<div class="tab-pane fade show active" id="home" role="tabpanel"
+								aria-labelledby="home-tab">
+
+
+								<div class="container-fluid card"
+									th:each="item, iStat: ${persona}">
+
+									<form action=""
+										th:action="@{'/inscripcion/persona/'+${item.idOferta}}"
+										method="POST" th:object="${inscripcionPersona}">
+
+										<div class="container-fluid">
+											<img th:src="@{'/uploads/category/'+${{item.evento.imagen}}}"
+												alt="..." height="100%" class="img-fluid">
+										</div>
+
+										<div class="transparente">
+											<div class="card-body">
+												<input type="hidden" th:value="${item.idOferta}" />
+												<h3>
+													<strong><i class="fas fa-calendar-day"> </i>
+														Nombre del curso: </strong>
+												</h3>
+												<h5 class="card-title" th:text="${item.evento.nombre}"></h5>
+												<h3>
+													<strong><i class="fas fa-info-circle"> </i>
+														Detalles de evento: </strong>
+												</h3>
+												<p class="card-text" th:text="${item.detalles}"></p>
+												<h3>
+													<strong><i class="fas fa-money-bill-wave"> </i>
+														Costo: </strong>
+												</h3>
+												<p class="card-text" th:text="${item.evento.costo}"></p>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-primary">inscribirse</button>
+									</form>
+								</div>
+
+
+							</div>
+
+
+							<div class="tab-pane fade" id="profile" role="tabpanel"
+								aria-labelledby="profile-tab">
+
+								<div class="card" th:each="item, iStat: ${equipos}">
+									<div class="container-fluid">
+										<img th:src="@{'/uploads/category/'+${{item.evento.imagen}}}"
+											alt="..." width="500" height="100%">
+									</div>
+									<div class="transparente">
+										<div class="card-body">
+											<input type="hidden" th:value="${item.idOferta}" />
+											<h3>
+												<strong><i class="fas fa-calendar-day"> </i> Nombre
+													del curso: </strong>
+											</h3>
+											<h5 class="card-title" th:text="${item.evento.nombre}"></h5>
+											<h3>
+												<strong><i class="fas fa-info-circle"> </i>
+													Detalles de evento: </strong>
+											</h3>
+											<p class="card-text" th:text="${item.detalles}"></p>
+											<h3>
+												<strong><i class="fas fa-money-bill-wave"> </i>
+													Costo: </strong>
+											</h3>
+											<p class="card-text" th:text="${item.evento.costo}"></p>
+										</div>
+									</div>
+									<button type="button" class="btn btn-primary"
+										data-bs-toggle="modal" data-bs-target="#exampleModal"
+										data-bs-whatever="@getbootstrap">Inscribirse</button>
+
+									<div class="modal fade" id="exampleModal" tabindex="-1"
+										aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">Nombre
+														del equipo:</h5>
+													<button type="button" class="btn-close"
+														data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<form
+														th:action="@{'/inscripcion/equipo/'+${item.idOferta}}"
+														method="POST">
+
+														<div class="mb-3">
+															<label for="recipient-name" class="col-form-label">Registra
+																tu equipo</label> <input type="text" class="form-control"
+																id="recipient-name" th:name="nombre">
+														</div>
+
+														<button type="button" class="btn btn-secondary"
+															data-bs-dismiss="modal">Cancelar</button>
+														<button type="submit" class="btn btn-primary">Registrar</button>
+													</form>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+		</main>
+	</div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+package com.utez.mx.Entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="persona")
+public class Persona {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	int idPersona;
+	String primerApellido;
+	String segundoApellido;
+	String nombre;
+	String rfc;
+	String curp;
+	String claveElector;
+	String entidadFederativa;
+	String municipio;
+	String colonia;
+	String calle;
+	int numeroExterior;
+	int numeroInterior;
+	String email;
+	String fechaRegistro;
+}

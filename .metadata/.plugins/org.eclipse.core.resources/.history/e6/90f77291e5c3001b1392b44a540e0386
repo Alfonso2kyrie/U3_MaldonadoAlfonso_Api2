@@ -1,0 +1,5 @@
+package com.utez.mx.Repository;
+
+public interface PersonaRepository {
+
+}

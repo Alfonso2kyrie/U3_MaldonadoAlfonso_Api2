@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.3/sweetalert2.min.css">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.3/sweetalert2.css">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+	integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+	crossorigin="anonymous" />
+
+<script src="https://kit.fontawesome.com/938364cfa6.js"
+	crossorigin="anonymous"></script>
+<title>Eventos</title>
+
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	background-image:
+		url("https://www.wallpapertip.com/wmimgs/9-92542_geometric-background-widescreen.png");
+	display: flex;
+	align-items: center;
+}
+
+.contenedor {
+	background-color: #fff;
+	width: 90%;
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+	-webkit-box-shadow: -40px 32px 46px -11px rgba(0, 0, 0, 0.46);
+	-moz-box-shadow: -40px 32px 46px -11px rgba(0, 0, 0, 0.46);
+	box-shadow: -40px 32px 46px -11px rgba(0, 0, 0, 0.46);
+	padding-left: 3%;
+	padding-right: 3%;
+	border-radius: 40px;
+	background-color: #F8F4F4;
+}
+
+.logo {
+	font-size: 25px;
+	font-weight: 600;
+	color: #000;
+	text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.menu a {
+	font-size: 22px;
+	border-bottom: 2px solid transparent;
+	margin-left: 40px;
+	color: #000;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid #2009a5;
+}
+
+main {
+	
+}
+
+main .contenedor-img {
+	max-width: 60%;
+	margin-right: 40px;
+}
+
+.contenedor-texto .titulo {
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+.contenedor-texto .mascota {
+	font-weight: bold;
+	color: #2009a5;
+	font-style: normal;
+}
+
+.contenedor-texto p {
+	margin-bottom: 40px;
+	line-height: 36px;
+}
+
+.btn-link {
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 100px;
+	margin-right: 10px;
+	text-decoration: none;
+	background: #f2f2f2;
+}
+
+.btn-link:hover, .btn-link.activo {
+	color: #fff;
+	background: #5b4a9a;
+}
+
+@media screen and (max-width: 915px) {
+	main {
+		flex-direction: column;
+		text-align: center;
+	}
+	main .contenedor-img {
+		margin-bottom: 40px;
+	}
+}
+
+.btnRegistrar {
+	margin-top: 3%;
+}
+
+.imagenRedonda {
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border-radius: 150px;
+}
+
+.contenedorImagen {
+	background-color: #fff;
+	padding: 5px;
+	width: 100px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-webkit-box-shadow: 1px 1px 10px #484848;
+	border-radius: 150px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.contenedorTabla {
+	background-image: linear-gradient(to bottom, #13214e, #20295b, #2e3168, #3b3975, #494182,
+		#51478b, #5a4c95, #63529e, #6857a5, #6d5bad, #7360b4, #7865bc);
+	-webkit-box-shadow: -2px 9px 37px 8px rgba(0, 0, 0, 0.46);
+	-moz-box-shadow: -2px 9px 37px 8px rgba(0, 0, 0, 0.46);
+	box-shadow: -2px 9px 37px 8px rgba(0, 0, 0, 0.46);
+}
+
+.tablaEstilos {
+	color: white;
+	background-image: linear-gradient(to bottom, #13214e, #20295b, #2e3168, #3b3975, #494182,
+		#51478b, #5a4c95, #63529e, #6857a5, #6d5bad, #7360b4, #7865bc);
+}
+
+.get_in_touch {
+	max-width: 800px;
+	margin: 50px auto;
+	position: relative;
+	box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	background: rgba(255, 255, 255, .4);
+	background: no-repeat;
+}
+
+.get_in_touch .title {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 3em;
+	line-height: 48px;
+	padding-bottom: 20px;
+	color: #5543ca;
+	background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-field {
+	position: relative;
+	margin: 32px 0;
+}
+
+.contact-form .input-text {
+	display: block;
+	width: 100%;
+	height: 36px;
+	border-width: 0 0 2px 0;
+	border-color: "5543ca";
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+	outline: none;
+}
+
+.contact-form label {
+	position: initial;
+	left: 20px;
+	bottom: 11px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #5543ca;
+	cursor: text;
+	text-transform: capitalize;
+	transition: transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+	margin-top: 3%;
+	display: inline-block;
+	background-image: linear-gradient(125deg, #a72879, #064497);
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	padding: 8px 16px;
+	border: none;
+	width: 200px;
+	cursor: pointer;
+}
+
+.divImagen {
+	background-image: url("");
+}
+</style>
+</head>
+
+<body>
+
+	<div class="contenedor">
+		<header>
+
+			<div class="contenedorImagen">
+				<div class="card-body" style="">
+					<img class="imagenRedonda" alt="Morelos Logo"
+						src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa23828ee69d63a71/backgroundarea/i1377858141ec29e2/version/1539622028/image.png">
+				</div>
+			</div>
+
+			<h1>
+				<strong style="color: #5b4a9a;"> EVENTO </strong>
+			</h1>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item active"><a class="nav-link">
+								<form action="" id="formLogout" th:action="@{/logout}"
+									method="GET">
+									<button type="button" onclick="validFormLogout(event)"
+										class="btn btn-primary">Cerrar sesion</button>
+								</form>
+						</a></li>
+
+						<li class="nav-item active"><a class="nav-link">
+								<form action="" th:action="@{/oferta/all}" method="GET">
+									<button type="submit" class="btn btn-primary">Registrar
+										oferta</button>
+								</form>
+						</a></li>
+
+						<li class="nav-item active"><a class="nav-link">
+								<form action="" th:action="@{/usuario/all}" method="GET">
+									<button type="submit" class="btn btn-primary">Usuarios</button>
+								</form>
+						</a></li>
+
+						<li class="nav-item active"><a class="nav-link">
+								<form action="" th:action="@{/tipo/all}" method="GET">
+									<button type="submit" class="btn btn-primary">Tipos</button>
+								</form>
+						</a></li>
+
+						<li class="nav-item active"><a class="nav-link">
+								<form action="" th:action="@{/cambio/all}" method="GET">
+									<button type="submit" class="btn btn-primary">Cambios</button>
+								</form>
+						</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+
+
+		<main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row" style="padding: 4%">
+				<div class="col-lg-6"></div>
+				<div class="col-lg-6"></div>
+				<div class="col-lg-6"></div>
+				<div class="col-lg-6"></div>
+				<div class="col-lg-6"></div>
+			</div>
+
+
+
+			<div class="row" style="padding-left: 3%; padding-right: 3%;">
+
+				<div class="col-lg-12 contenedorCard" style="padding-left: 15%;">
+					<div class="card" th:each="item, iStat: ${listaOferta}"
+						style="width: 40rem; padding: 3%; margin-bottom: 7%">
+						<div class="transparente" style="color: white">
+
+							<div class="card-body">
+								<input type="hidden" th:value="${item.idOferta}">
+								<h3>
+									<strong><i class="fas fa-calendar-day"> </i> Nombre
+										del curso: </strong>
+								</h3>
+								<h5 class="card-title" th:text="${item.evento.nombre}"></h5>
+								<h3>
+									<strong><i class="fas fa-info-circle"> </i> Detalles
+										de evento: </strong>
+								</h3>
+								<p class="card-text" th:text="${item.detalles}"></p>
+								<h3>
+									<strong><i class="fas fa-money-bill-wave"> </i> Costo:
+									</strong>
+								</h3>
+								<p class="card-text" th:text="${item.evento.costo}"></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+			<div class="row" style="padding-left: 3%; padding-right: 3%;">
+
+
+
+				<div class="col-lg-12 table-responsive" style="margin-bottom: 3%;">
+					<table class="table tablaEstilos" border="1">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+
+								<th scope="col">Nombre</th>
+								<th scope="col">Tipo</th>
+								<th scope="col">Costo</th>
+								<th scope="col">Descripcion</th>
+								<th scope="col">Modalidad</th>
+								<th scope="col">Eliminar</th>
+								<th scope="col">Editar</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="item, iStat: ${listaEventos}">
+								<td th:text="${iStat.count}"></td>
+
+								<td th:text="${item.nombre}"></td>
+								<td th:text="${item.tipo.nombre}"></td>
+								<td th:text="'$'+${item.costo}"></td>
+								<td th:text="${item.descripcion}"></td>
+								<td th:text="${item.modalidad.nombre}"></td>
+								<td><a class="btn btn-danger"
+									th:href="@{'/eventoOferta/delete/'+${item.idEvento}}"><i
+										class="fas fa-trash"></i></a></td>
+								<td><a class="btn btn-primary"
+									th:href="@{'/evento/one/'+${item.idEvento}}"> <i
+										class="fas fa-edit"></i></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+				<div class="col-lg-12" style="padding-left: 15%;">
+					<section class="get_in_touch">
+						<div class="container">
+
+							<h1 class="title">Formulario de Evento</h1>
+							<form action="" id="formEvento" th:action="@{/evento/save}"
+								method="POST" th:object="${evento}"
+								enctype="multipart/form-data">
+								<div class="contact-form row">
+
+									<input type="hidden" th:field="*{idEvento}">
+
+									<div class="form-field col-lg-6">
+										<label for="inputEmail4" class="label">Nombre</label> <input
+											type="text" class="input-text" id="nombre"
+											th:field="*{nombre}">
+
+
+									</div>
+									<div class="form-field col-lg-6">
+										<br /> <label>Tipo</label> <select class="form-select"
+											th:name="tipoName">
+											<option th:each="item2 : ${tipos}" th:text="${item2.nombre}"
+												th:value="${item2.idTipo}"
+												th:selected="${item2.idTipo == evento.tipo.idTipo}"></option>
+										</select>
+									</div>
+									<div class="form-field col-lg-6">
+										<label for="inputEmail4" class="label">Capacidad
+											Minima</label> <input type="number" class="input-text" id="capamin"
+											th:field="*{capacidadMinima}">
+									</div>
+									<div class="form-field col-lg-6">
+										<label for="inputPassword4" class="label">Capacidad
+											Maxima</label> <input type="number" class="input-text" id="capamax"
+											th:field="*{capacidadMaxima}"> <span class="red-text"
+											id="sp-capamax"></span>
+									</div>
+									<div class="col-md-6">
+										<label for="inputEmail4" class="label">Costo</label> <input
+											type="text" class="number" id="costo" th:field="*{costo}">
+										<span class="red-text" id="sp-costo"></span>
+									</div>
+									<div class="form-field col-lg-6">
+										<label for="inputPassword4" class="label">Descripcion</label>
+										<input type="text" class="input-text" id="desc"
+											th:field="*{descripcion}"> <span class="red-text"
+											id="sp-desc"></span>
+									</div>
+									<div class="form-field col-lg-6">
+										<label for="inputEmail4" class="label">Edad Minima</label> <input
+											type="text" class="input-text" id="edadmin"
+											th:field="*{edadMinima}"> <span class="red-text"
+											id="sp-edad"></span>
+									</div>
+									<div class="form-field col-lg-6">
+										<label for="inputPassword4" class="label">Publico</label> <input
+											type="text" class="input-text" id="pub"
+											th:field="*{publicoObjetivo}"> <span class="red-text"
+											id="sp-pub"></span>
+									</div>
+									<div class="form-field col-lg-6">
+										<br /> <label>Modalidad</label> <select class="form-select"
+											th:name="modalidadName">
+											<option th:each="item : ${modalidades}"
+												th:text="${item.nombre}" th:value="${item.idModalidad}"
+												th:selected="${item.idModalidad == evento.modalidad.idModalidad}"></option>
+										</select>
+									</div>
+									<div class="form-field col-lg-6">
+										<br /> <label>Imagen</label> <input type="file" name="file"
+											class="input-text" id="file"> <span class="red-text"
+											id="sp-file"></span>
+									</div>
+									<button type="button" onclick="validFormEvento(event)"
+										class="btn btn-primary btnRegistrar">
+										Registrar <i class="fas fa-check-circle"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</section>
+				</div>
+
+
+			</div>
+			<footer style="margin-top: 3%">
+				<div class="row">
+					<div class="col-lg-12"
+						style="background-color: #5b4a9a; color: white; text-align: center;">
+						<p class="small">
+							<strong>Cuernavaca Morelos 2018-2024</strong>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</div>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.3/sweetalert2.all.min.js"></script>
+	<script src="https://kit.fontawesome.com/938364cfa6.js"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.3/sweetalert2.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+		integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+		crossorigin="anonymous"></script>
+	<script>
+		const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		const msjConfirmacion = 'Le solicitamos esperar un momento a que la solicitud termine.';
+		const titleConfirmacion = '¿Está seguro de realizar la acción solicitada?';
+		const msjExito = 'La actividad solicitada, se ha realizado de manera exitosa.';
+		const titleExito = 'Acción realizada exitosamente';
+		const msjError = 'No se ha logrado realizar la actividad solicitada, por lo cual le solicitamos contactar a soporte técnico para corregir el problema.';
+		const titleError = 'Error al realizar la acción';
+		const numbers = /^-?\d+\.?\d*$/;
+		
+		var nombreEx = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+		var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+		var expTelefono = /^([0-9])*$/;
+		var contra = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
+
+		function validFormEvento(event) {
+			event.preventDefault();
+			
+			var vnombre=false, vaTipo = true, vaCapamax=false, vaCapamin=false, vaCosto=false, vaDesc=false, vaEdadmin=false, vaPub=false, vaMod = true, vafile = true;
+
+			var nombre = document.getElementById("nombre");
+			var capamin = document.getElementById("capamin");
+			//Number (capamin) = document.getEleme
+			var capamax = document.getElementById("capamax");
+			var costo = document.getElementById("costo");
+			var desc = document.getElementById("desc");
+			var edadmin = document.getElementById("edadmin");
+			var pub = document.getElementById("pub");
+
+			if (!nombreEx.exec(nombre.value)) {
+
+
+				Command: toastr["error"](
+						"El formato del nombre es primera mayuscula", "Nombre")
+
+				toastr.options = {
+					"closeButton" : false,
+					"debug" : false,
+					"newestOnTop" : false,
+					"progressBar" : false,
+					"positionClass" : "toast-top-right",
+					"preventDuplicates" : false,
+					"onclick" : null,
+					"showDuration" : "300",
+					"hideDuration" : "1000",
+					"timeOut" : "5000",
+					"extendedTimeOut" : "1000",
+					"showEasing" : "swing",
+					"hideEasing" : "linear",
+					"showMethod" : "fadeIn",
+					"hideMethod" : "fadeOut"
+				}
+
+			} else {
+				vnombre = true;
+
+			}			
+			
+	
+
+			if (capamin.value <= 0) {
+				Command: toastr["error"](
+						"La cantidad minima no es correcta", "Cantidad Minima")
+
+				toastr.options = {
+					"closeButton" : false,
+					"debug" : false,
+					"newestOnTop" : false,
+					"progressBar" : false,
+					"positionClass" : "toast-top-right",
+					"preventDuplicates" : false,
+					"onclick" : null,
+					"showDuration" : "300",
+					"hideDuration" : "1000",
+					"timeOut" : "5000",
+					"extendedTimeOut" : "1000",
+					"showEasing" : "swing",
+					"hideEasing" : "linear",
+					"showMethod" : "fadeIn",
+					"hideMethod" : "fadeOut"
+				}
+			} else {
+				validCapamin = true;
+			}
+			
+			
+			if ((Number(capamax.value)) <= Number(capamin.value)) {
+				
+					Command: toastr["error"](
+							"La cantidad maxima no debe ser mayor a la menor", "Cantidad")
+
+					toastr.options = {
+						"closeButton" : false,
+						"debug" : false,
+						"newestOnTop" : false,
+						"progressBar" : false,
+						"positionClass" : "toast-top-right",
+						"preventDuplicates" : false,
+						"onclick" : null,
+						"showDuration" : "300",
+						"hideDuration" : "1000",
+						"timeOut" : "5000",
+						"extendedTimeOut" : "1000",
+						"showEasing" : "swing",
+						"hideEasing" : "linear",
+						"showMethod" : "fadeIn",
+						"hideMethod" : "fadeOut"
+					}
+				
+				
+			} else {
+				validCapamax = true;
+			}
+			
+			if (costo.value <= 0) {
+				Command: toastr["error"](
+						"El costo no es correcto", "Costo")
+
+				toastr.options = {
+					"closeButton" : false,
+					"debug" : false,
+					"newestOnTop" : false,
+					"progressBar" : false,
+					"positionClass" : "toast-top-right",
+					"preventDuplicates" : false,
+					"onclick" : null,
+					"showDuration" : "300",
+					"hideDuration" : "1000",
+					"timeOut" : "5000",
+					"extendedTimeOut" : "1000",
+					"showEasing" : "swing",
+					"hideEasing" : "linear",
+					"showMethod" : "fadeIn",
+					"hideMethod" : "fadeOut"
+				}
+			} else {
+				vacosto = true;
+			}
+
+			if (!desc.value) {
+				Command: toastr["error"](
+						"El formato del campo descripcion esta incorrecto",
+						"Descrpcion")
+
+				toastr.options = {
+					"closeButton" : false,
+					"debug" : false,
+					"newestOnTop" : false,
+					"progressBar" : false,
+					"positionClass" : "toast-top-right",
+					"preventDuplicates" : false,
+					"onclick" : null,
+					"showDuration" : "300",
+					"hideDuration" : "1000",
+					"timeOut" : "5000",
+					"extendedTimeOut" : "1000",
+					"showEasing" : "swing",
+					"hideEasing" : "linear",
+					"showMethod" : "fadeIn",
+					"hideMethod" : "fadeOut"
+				}
+			} else {
+				vaDesc = true;
+			}
+
+			if (edadmin.value < 6) {
+				Command: toastr["error"](
+						"Edad minima es 6", "Edad")
+
+				toastr.options = {
+					"closeButton" : false,
+					"debug" : false,
+					"newestOnTop" : false,
+					"progressBar" : false,
+					"positionClass" : "toast-top-right",
+					"preventDuplicates" : false,
+					"onclick" : null,
+					"showDuration" : "300",
+					"hideDuration" : "1000",
+					"timeOut" : "5000",
+					"extendedTimeOut" : "1000",
+					"showEasing" : "swing",
+					"hideEasing" : "linear",
+					"showMethod" : "fadeIn",
+					"hideMethod" : "fadeOut"
+				}
+			} else {
+				vaEdadmin = true;
+			}
+
+			if (!pub.value) {
+				Command: toastr["error"](
+						"Campo invalido", "Publico")
+
+				toastr.options = {
+					"closeButton" : false,
+					"debug" : false,
+					"newestOnTop" : false,
+					"progressBar" : false,
+					"positionClass" : "toast-top-right",
+					"preventDuplicates" : false,
+					"onclick" : null,
+					"showDuration" : "300",
+					"hideDuration" : "1000",
+					"timeOut" : "5000",
+					"extendedTimeOut" : "1000",
+					"showEasing" : "swing",
+					"hideEasing" : "linear",
+					"showMethod" : "fadeIn",
+					"hideMethod" : "fadeOut"
+				}
+			} else {
+				vaPub = true;	
+			}
+			
+			//var vnombre, vaTipo = true, vaCapamax, vaCapamin, vaCosto, vaDesc, vaEdadmin, vaPub, vaMod = true, vafile = true;
+			
+			console.log("1>",vnombre);
+			console.log("2>",validCapamax);
+			console.log("3>",validCapamin);
+			console.log("4>",vacosto);
+			console.log("5>",vaDesc);
+			console.log("6>",vaEdadmin);
+			console.log("7>",vaPub);
+			console.log("8>",vaMod);
+			console.log("9>",vafile);
+			console.log("10>",vaTipo);
+			
+			if (vnombre && validCapamax && validCapamin && vacosto && vaDesc && vaEdadmin && vaPub && vaMod && vafile && vaTipo) {
+				console.log("pase");
+				Swal.fire({
+					position : 'top-end',
+					icon : 'success',
+					title : 'Se ha registrado un evento',
+					showConfirmButton : false,
+					timer : 3000
+				}).then((result) => {
+				      if (true) {
+				    	  console.log("entre");
+				    	  document.getElementById("formEvento").submit();
+				        }
+				      });
+
+			}
+		}
+		function validFormLogout(event) {
+			Swal.fire({
+				  title: 'Cerrar Sesion?',
+				  icon: 'warning',
+				  showCancelButton: true,
+				  confirmButtonColor: '#3085d6',
+				  cancelButtonColor: '#d33',
+				  confirmButtonText: 'Salir'
+				}).then((result) => {
+				  if (result.isConfirmed) {
+					  document.getElementById("formLogout").submit();
+				    Swal.fire(
+				      'Deleted!',
+				      'Your file has been deleted.',
+				      'success'
+				    )
+				  }
+				});
+			
+			
+			
+		}
+	</script>
+</body>
+
+</html>

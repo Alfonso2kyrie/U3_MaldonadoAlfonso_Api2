@@ -1,0 +1,5 @@
+package mx.gob.eventosComunitarios.controller;
+
+public class ModalidadController {
+
+}

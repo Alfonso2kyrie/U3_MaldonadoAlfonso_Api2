@@ -1,0 +1,14 @@
+package com.utez.mx.Entity;
+
+public class Persona {
+	int idPersona;
+	String primerApellido;
+	String segundoApellido;
+	String nombre;
+	String rfc;
+	String curp;
+	String claveElector;
+	
+	String email;
+	String fechaRegistro;
+}

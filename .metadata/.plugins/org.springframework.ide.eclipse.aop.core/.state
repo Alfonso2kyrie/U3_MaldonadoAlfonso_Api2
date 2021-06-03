@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="AppSecurityJPA_JWT"/>
+<aop-project name="U3_MaldonadoAlfonso_Api"/>
+<aop-project name="appLogin"/>
+<aop-project name="U3_PerezAntonio_API"/>
+<aop-project name="octaspring"/>
+<aop-project name="eventosComunitarios"/>
+<aop-project name="WepAppSecurityJPA"/>
+</aop-reference-model>

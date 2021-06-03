@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mx.gob.eventosComunitarios.config.SpringConfig&apos; to &apos;SecurityConfig&apos;&#x0D;&#x0A;- Original project: &apos;eventosComunitarios&apos;&#x0D;&#x0A;- Original element: &apos;mx.gob.eventosComunitarios.config.SpringConfig&apos;&#x0D;&#x0A;- Renamed element: &apos;mx.gob.eventosComunitarios.config.SecurityConfig&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SpringConfig&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;mx.gob.eventosComunitarios.config{SpringConfig.java[SpringConfig" matchStrategy="1" name="SecurityConfig" qualified="false" references="true" similarDeclarations="false" stamp="1618282211039" textual="false" version="1.0"/>
+</session>

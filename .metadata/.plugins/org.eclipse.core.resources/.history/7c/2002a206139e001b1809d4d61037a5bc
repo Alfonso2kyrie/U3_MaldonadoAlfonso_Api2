@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/938364cfa6.js"
+	crossorigin="anonymous"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Este es un login</h1>
+<img src="https://pbs.twimg.com/media/DnASVN4W0AAAEE7.jpg" />
+	<div class="row my-5">
+			<div class="col-lg-4">
+				<form method="POST" th:action="@{/login}" action="#">
+					<label class="form-label">Email</label>
+					<input name="username" class="form-control" type="email" placeholder="Correo electronico">
+					<label class="form-label">Contraseña</label>
+					<input name="password" class="form-control" type="password" placeholder="Min 8 caracteres">
+					<div class="d-grip gap-2">
+						<button class="btn btn-success">Iniciar sesion</button>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,19 @@
+package mx.gob.eventosComunitarios.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import mx.gob.eventosComunitarios.entity.Horario;
+
+@Controller
+public class HorarioController {
+	
+	@Autowired
+	private Horario horario;
+	
+	@GetMapping("/horario/all")
+	public String getHorarios() {}
+	
+	
+}

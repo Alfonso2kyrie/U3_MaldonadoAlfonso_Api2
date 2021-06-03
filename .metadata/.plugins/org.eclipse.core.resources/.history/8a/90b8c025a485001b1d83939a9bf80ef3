@@ -1,0 +1,73 @@
+package mx.gob.eventosComunitarios.service;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import mx.gob.eventosComunitarios.dao.OfertaInterface;
+import mx.gob.eventosComunitarios.entity.Evento;
+import mx.gob.eventosComunitarios.entity.Oferta;
+
+public class OfertaService implements OfertaInterface{
+
+	private JdbcTemplate jdbc;
+	String sql;
+	
+	@Override
+	public void save(Oferta promo) {
+		// TODO Auto-generated method stub
+		sql ="INSERT INTO oferta(fechaInicio, fechaFin, fechaInicioRegistro, fechaFinRegistro, evento, horario, status)values(?,?,?,?,?,?,?)";
+		jdbc.update(sql, promo.getFechaInicio(), promo.getFechaFin(), promo.getFechaInicioRegistro(), promo.getFechaFinRegistro(), promo.getEvento(), promo.getHorario(), promo.getStatus());
+	}
+
+	@Override
+	public void update(Oferta promo) {
+		// TODO Auto-generated method stub
+		sql ="UPDATE oferta SET fechaInicio=?, fechaFin=?, fechaInicioRegistro =?, fechaFinRegistro=?, evento=?, horario=?, status=? where idOferta=?";
+		jdbc.update(sql, promo.getFechaInicio(), promo.getFechaFin(), promo.getFechaInicioRegistro(), promo.getFechaFinRegistro(), promo.getEvento(), promo.getHorario(), promo.getStatus(), promo.getIdOferta());
+	}
+
+	@Override
+	public void delete(long id) {
+		// TODO Auto-generated method stub
+		sql ="DELETE FROM oferta WHERE idOferta=?";
+		jdbc.update(sql, id);
+	}
+
+	@Override
+	public List<Oferta> findAll() {
+		// TODO Auto-generated method stub
+		sql="SELECT * FROM oferta";
+		return this.jdbc.query(sql, BeanPropertyRowMapper.newInstance(Oferta.class));
+	}
+
+	@Override
+	public Oferta findById(long id) {
+		// TODO Auto-generated method stub
+		sql="SELECT * FROM oferta WHERE idOferta =?";
+		return this.jdbc.queryForObject(sql, new Object[] {id}, BeanPropertyRowMapper.newInstance(Oferta.class));
+	}
+
+	@Override
+	public List<Oferta> findByDate(Date date) {
+		// TODO Auto-generated method stub
+		sql="SELECT * FROM oferta WHERE date = ?";
+		return (List<Oferta>) this.jdbc.queryForObject(sql, new Object[] {date}, BeanPropertyRowMapper.newInstance(Oferta.class));
+	}
+
+	@Override
+	public List<Oferta> findByEvento(Evento event) {
+		// TODO Auto-generated method stub
+		sql="SELECT * FROM oferta WHERE evento = ?";
+		return (List<Oferta>) this.jdbc.queryForObject(sql, new Object[] {event}, BeanPropertyRowMapper.newInstance(Oferta.class));
+	}
+
+	@Override
+	public List<Oferta> findByStatus(long status) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

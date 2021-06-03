@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\alfon\Downloads\U3_PerezAntonio_API"/>
+			<item value="C:\Users\alfon\Downloads\U3_DeJesusLuis_API"/>
+			<item value="C:\Users\alfon\OneDrive\Escritorio\eventosComunitarios"/>
+			<item value="C:\Users\alfon\OneDrive\Escritorio\eventos\eventosComunitarios"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\AppSecurityJPA_JWT"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\WebAppConfigJPA2"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\WepAppSecurityJPAs"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\skychar\Nueva carpeta\Proyecto OCTA"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\skychar\Proyecto OCTA"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\WepAppSecurityJPA"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\WebAppSecurity"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\skychar\Nueva carpeta\octaspring"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\integradora\eventosComunitarios"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\JavaWeb"/>
+			<item value="C:\Users\alfon\OneDrive\Escritorio\integradora"/>
+			<item value="C:\Users\alfon\OneDrive\Escritorio\servlets-basico2"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\Nueva carpeta\eventosComunitarios"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\eventosComunitarios"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\narvaez\tableroKanban"/>
+			<item value="C:\Users\alfon\OneDrive\Documentos\Universidad\8to\skychar\octaspring"/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="true"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="389"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="195"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+</section>
